@@ -89,6 +89,8 @@ main{
 
 .intro-feature{
     max-width:95%;
+    min-width:0;
+    flex: 1 1;
 }
 
 section a{
@@ -112,15 +114,9 @@ section img{
 }
 
 
-.section-eco, .section-about, .section-mailing{
+.section-eco, .section-about, .section-mailing, #mc_embed_shell{
     text-align: center;
-    width: 80%;
-    margin:20px auto;
-}
-
-#mc_embed_shell{
-    text-align: center;
-    width: 80%;
+    width: min(80%, 1100px);
     margin:20px auto;
 }
 
