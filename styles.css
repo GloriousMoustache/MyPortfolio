@@ -109,7 +109,7 @@ main{
     flex: 1;
 }
 
-section a{
+/* section a{
     text-decoration: none;
     color: white;
     background-color: #006139;
@@ -117,19 +117,56 @@ section a{
     padding:8px 26px;
     margin:10px;
     border-radius: 4px;
-}
+} */
 
-section a:hover{
+/* section a:hover{
     background-color: #dbffe4;
     color:#40714D;
     border: 1px solid #40714D;
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+} */
+ 
+section a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    background: #006139;
+    border: 1px solid transparent;
+
+  /* micro-interactions */
+    transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    background-color .18s ease,
+    color .18s ease,
+    border-color .18s ease;
+    transform-origin: center;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+section a:hover, section a:focus-visible{
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    background: white;
+    color:#006139;
+    border: 1px solid #006139;
+}
+
+section a:active {
+    transform: translateY(0) scale(0.99);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
 section img{
     border-radius: 5px;
 }
-
 
 .section-eco, .section-about, .section-mailing, #mc_embed_shell{
     text-align: center;
@@ -188,6 +225,29 @@ section img{
     padding:8px 26px;
     margin:10px;
     border-radius: 4px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    background: #006139;
+    border: 1px solid transparent;
+
+  /* micro-interactions */
+    transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    background-color .18s ease,
+    color .18s ease,
+    border-color .18s ease;
+    transform-origin: center;
+    will-change: transform;
+    backface-visibility: hidden;
 }
 
 .mail-button:hover{
@@ -196,6 +256,11 @@ section img{
     border: 1px solid #40714D;
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    background: white;
+    color:#006139;
+    border: 1px solid #006139;
 }
 
 /* Footer and final navigation pane styling */
