@@ -6,11 +6,12 @@
 
 html{
     color:#40714D;
-    font-family: Arial;
+    font-family: "Roboto";
     scroll-behavior: smooth;
     overflow-x: hidden;
     margin:0;
     padding:0;
+    font-size:1.1rem;
 }
 
 body{
@@ -29,7 +30,7 @@ nav{
     align-items: center;
 }
 .nav-image{
-    height:100%;
+    height:6rem;
     display: inline;
     max-width: 100%;
 }
@@ -38,6 +39,7 @@ nav{
     display:flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -78,6 +80,10 @@ nav{
     font-size: xx-large;
     border: 1px solid white;
     background: linear-gradient(to top, rgba(0,0,0,0.45),rgba(0,0,0,0)50%);
+}
+
+.hero-image{
+    height:4rem;
 }
 
 /* Main page styling */
@@ -131,12 +137,13 @@ section a {
     align-items: center;
     justify-content: center;
     gap: .5rem;
+    font-size: 1.2rem;
 
     padding: 10px 18px;
-    border-radius: 8px;
     text-decoration: none;
     color: #fff;
     background: #006139;
+    border-radius: 8px;
     border: 1px solid transparent;
 
   /* micro-interactions */
@@ -219,24 +226,19 @@ section img{
 
 .mail-button {
     text-decoration: none;
-    color: white;
+    color: #fff;
     background-color: #006139;
+    background: #006139;
     text-align: center;
-    padding:8px 26px;
     margin:10px;
-    border-radius: 4px;
-
+    font-size: 1.2rem;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: 1px solid transparent;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: .5rem;
-
-    padding: 10px 18px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: #fff;
-    background: #006139;
-    border: 1px solid transparent;
 
   /* micro-interactions */
     transition:
@@ -251,16 +253,22 @@ section img{
 }
 
 .mail-button:hover{
-    background-color: #dbffe4;
+    /* background-color: #dbffe4;
     color:#40714D;
-    border: 1px solid #40714D;
+    /* border: 1px solid #40714D; */
+    
+    /* transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    background: white;
+    color:#006139;
+    border: 1px solid #006139; */
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
     transform: translateY(-2px) scale(1.02);
     box-shadow: 0 6px 18px rgba(0,0,0,0.12);
     background: white;
     color:#006139;
     border: 1px solid #006139;
+
 }
 
 /* Footer and final navigation pane styling */
@@ -288,6 +296,11 @@ footer a:hover{
 /* @media settings for responsive page. Currently only supports 768px for mobile */
 
 @media (max-width: 768px){
+    .hero-image{
+    height:2rem;
+}
+
+
     .section-intro, .section-eco, .section-about, .section-mailing, #mc_embed_shell{
         width:92%;
     }
