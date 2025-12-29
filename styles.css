@@ -308,6 +308,10 @@ footer a:hover{
 .footer-image{
     height:8rem;
 }
+hr{
+    width:50%;
+}
+
 
 /* @media settings for responsive page. Currently only supports 768px for mobile */
 
