@@ -11,6 +11,7 @@
       src="https://kit.fontawesome.com/7130237027.js"
       crossorigin="anonymous"
     ></script>
+    <script src="javascript.js"></script>
   </head>
   <link rel="stylesheet" href="styles.css" />
   <link
@@ -21,7 +22,8 @@
 
   <body>
     <nav>
-      <div class="nav-links">
+      
+      <div class="nav-links" id="nav-container">
         <img class="nav-image" src="images/Knots & Embers_Logo_Full Logo_Green-01.png" alt="" />
         <a href="home">HOME</a>
         <a href="About">SHOP</a>
@@ -40,6 +42,9 @@
           href="https://www.facebook.com/knotsandembers"
           target="_blank">
           <i class="fab fa-facebook"></i>
+        </a>
+        <a href="javascript:void(0);" class="nav-menu-icon" onclick="openMenu()">
+        <i class="fa-solid fa-list"></i>
         </a>
       </div>
     </nav>
@@ -370,25 +375,48 @@
         <div class="spacer"></div>
     </main>
     <footer>
-        <div class="spacer"></div>
-        <a href="home">HOME</a>
-        <a href="About">SHOP</a>
-        <a href="About">COMMISSIONS</a>
-        <a href="About">GALLERY</a>
-        <a href="About">WORKSHOPS</a>
-        <a href="About">SKILLSHARE CLASS</a>
-        <a href="About">ABOUT</a>
-        <a href="About">CONTACT</a>
-        <a
-          href="https://www.instagram.com/jobakeryoga?igsh=MXA0djN3cWY0bWJiZw=="
-          target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a
-          href="https://www.instagram.com/jobakeryoga?igsh=MXA0djN3cWY0bWJiZw=="
-          target="_blank">
-          <i class="fab fa-facebook"></i>
-        </a>
+      <div class="half-spacer"></div>
+      <h2>Site Navigation, policies and contact</h2>
+      <section class="section-footer">
+        <div class="footer-container">
+          <div class="footer-links">
+          <a href="home">HOME</a>
+          <a href="About">SHOP</a>
+          <a href="About">COMMISSIONS</a>
+          <a href="About">GALLERY</a>
+          <a href="About">WORKSHOPS</a>
+          <a href="About">SKILLSHARE CLASS</a>
+          <a href="About">ABOUT</a>
+          <a href="About">CONTACT</a>
+        </div>
+        <div class="footer-content">
+          <p>
+            Copyright
+          </p>
+          <p>
+            Privacy Policy
+          </p>
+          <p>
+            Terms and Conditions
+          </p>
+          <p>
+                      <a
+            href="https://www.instagram.com/jobakeryoga?igsh=MXA0djN3cWY0bWJiZw=="
+            target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.instagram.com/jobakeryoga?igsh=MXA0djN3cWY0bWJiZw=="
+            target="_blank"> 
+            <i class="fab fa-facebook"></i>
+          </a>
+          </p>
+          <p>
+            <img class="footer-image" src="images/Knots & Embers_Logo_Full Logo_White-03.png">
+          </p>
+
+        </div>
+        </div>
+      </section>
     </footer>
   </body>
 </html>
