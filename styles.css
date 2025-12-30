@@ -96,6 +96,34 @@ nav{
     height:4rem;
 }
 
+.mini-hero{
+    position:relative;
+    background-image: url(images/PXL_20240210_114926942-rect.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 50vh;
+    max-height: 50vh;
+}
+
+.mini-hero-overlay{
+    position:absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    font-size: xx-large;
+    border: 1px solid white;
+    background: linear-gradient(to top, rgba(0,0,0,0.45),rgba(0,0,0,0)50%);
+}
+
+.mini-hero-image{
+    height:4rem;
+}
+
 /* Main page styling */
 
 main{
@@ -110,13 +138,13 @@ main{
     height:2rem;
 }
 
-.section-intro{
+.section-intro, .three-column-section{
     margin: 20px auto;
     width:80%;
     text-align: center;
 }
 
-.intro-container{
+.intro-container, .three-column-div{
     display:flex;
     gap:2rem;
     flex-wrap: wrap;
@@ -188,7 +216,7 @@ section img{
     border-radius: 5px;
 }
 
-.section-eco, .section-about, .section-mailing, #mc_embed_shell, .section-footer{
+.section-eco, .section-about, .section-mailing, #mc_embed_shell, .section-footer, .two-column-section{
     text-align: center;
     width: min(80%, 1100px);
     margin:20px auto;
@@ -196,13 +224,13 @@ section img{
 
 
 
-.eco-container, .about-container, .footer-container{
+.eco-container, .about-container, .footer-container, .two-column-div{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap:2rem;
 }
 
-.eco-image img, .about-image img{
+.eco-image img, .about-image img, .two-image-feature img{
     width:90%;
     max-width: 100%;
     height: auto;
@@ -346,22 +374,23 @@ hr{
         text-align:left;
     }
 
-    .hero-image{
+    .hero-image, .mini-hero-image{
     height:2rem;
     }
 
 
-    .section-intro, .section-eco, .section-about, .section-mailing, #mc_embed_shell{
+    .section-intro, .section-eco, .section-about, .section-mailing, #mc_embed_shell, .three-column-section, .two-column-section{
         width:92%;
     }
-    .eco-container,.about-container{
+    .eco-container,.about-container, .two-column-div{
         grid-template-columns: 1fr;
     }
-    .intro-container{
+    .intro-container, .three-column-div{
         flex-direction: column;
         gap: 1.25rem;
     }
     .hero{min-height: 55vh;}
+    .mini-hero{min-height: 55vh;}
     .space{height:2rem;}
     section a, .mail-button{
         display:inline-block;
