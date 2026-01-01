@@ -96,9 +96,17 @@ nav{
     height:4rem;
 }
 
+.about-hero-image{
+    background-image: url(images/PXL_20240210_114926942-rect.jpg);
+}
+
+.commission-hero-image{
+    background-image: url(images/PXL_20241217_092056573.jpg);
+}
+
 .mini-hero{
     position:relative;
-    background-image: url(images/PXL_20240210_114926942-rect.jpg);
+    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -123,6 +131,7 @@ nav{
 .mini-hero-image{
     height:4rem;
 }
+
 
 /* Main page styling */
 
@@ -150,11 +159,18 @@ main{
     flex-wrap: wrap;
 }
 
-.intro-feature{
+.intro-feature, .three-image-feature{
     max-width:95%;
     min-width:0;
     flex: 1;
 }
+
+.flex-image{
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+
 
 /* section a{
     text-decoration: none;
