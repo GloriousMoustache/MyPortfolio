@@ -104,6 +104,10 @@ nav{
     background-image: url(images/PXL_20241217_092056573.jpg);
 }
 
+.contact-hero-image{
+    background-image: url(images/PXL_20250811_155426089.jpg);
+}
+
 .mini-hero{
     position:relative;
     
@@ -147,11 +151,25 @@ main{
     height:2rem;
 }
 
-.section-intro, .three-column-section{
+.one-column-section{
     margin: 20px auto;
     width:80%;
     text-align: center;
 }
+
+.one-column-div{
+
+}
+
+.one-content-feature{
+
+}
+/* 
+.section-intro, .three-column-section{
+    margin: 20px auto;
+    width:80%;
+    text-align: center;
+} */
 
 .intro-container, .three-column-div{
     display:flex;
@@ -232,7 +250,7 @@ section img{
     border-radius: 5px;
 }
 
-.section-eco, .section-about, .section-mailing, #mc_embed_shell, .section-footer, .two-column-section{
+.section-eco, .section-about, .section-mailing, #mc_embed_shell, .section-footer, .two-column-section, .three-column-section, .one-column-section{
     text-align: center;
     width: min(80%, 1100px);
     margin:20px auto;
@@ -395,7 +413,7 @@ hr{
     }
 
 
-    .section-intro, .section-eco, .section-about, .section-mailing, #mc_embed_shell, .three-column-section, .two-column-section{
+    .section-intro, .section-eco, .section-about, .section-mailing, #mc_embed_shell, .three-column-section, .two-column-section, .one-column-section{
         width:92%;
     }
     .eco-container,.about-container, .two-column-div{
