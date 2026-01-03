@@ -75,8 +75,8 @@ nav{
     background-position: center;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 100vh;
-    max-height: 100vh;
+    height: 90vh;
+    max-height: 90vh;
 }
 
 .hero-overlay{
@@ -122,7 +122,6 @@ nav{
 
 .mini-hero{
     position:relative;
-    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -262,13 +261,17 @@ section img{
     border-radius: 5px;
 }
 
-.section-eco, .section-about, .section-mailing, #mc_embed_shell, .section-footer, .two-column-section, .three-column-section, .one-column-section{
+.section-eco, .section-about, .section-mailing, #mc_embed_shell, .section-footer, .two-column-section, .three-column-section, .one-column-section, .four-column-section{
     text-align: center;
     width: min(80%, 1100px);
     margin:20px auto;
 }
 
-
+.gallery-section{
+    text-align: center;
+    width: min(80%, 2500px);
+    margin:20px auto;
+}
 
 .eco-container, .about-container, .footer-container, .two-column-div{
     display: grid;
@@ -280,6 +283,20 @@ section img{
     width:90%;
     max-width: 100%;
     height: auto;
+}
+
+.gallery-div{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.gallery-feature{
+    flex:33%;
+    max-width:33%;
+}
+
+.gallery-image{
+    max-width: 95%;
 }
 
 /* Mail chimp styling */
@@ -425,12 +442,22 @@ hr{
     }
 
 
-    .section-intro, .section-eco, .section-about, .section-mailing, #mc_embed_shell, .three-column-section, .two-column-section, .one-column-section{
+    .section-intro, .section-eco, .section-about, .section-mailing, #mc_embed_shell, .three-column-section, .two-column-section, .one-column-section, .gallery-section{
         width:92%;
     }
     .eco-container,.about-container, .two-column-div{
         grid-template-columns: 1fr;
     }
+
+    
+.gallery-div{
+    display:block;
+}
+
+.gallery-image{
+    max-width: 80%;
+}
+
     .intro-container, .three-column-div{
         flex-direction: column;
         gap: 1.25rem;
